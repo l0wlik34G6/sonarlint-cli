@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.io.StringReader;
 import java.util.Collection;
 
-import static com.google.common.collect.Lists.newArrayList;
+import static org.sonar.api.internal.google.common.collect.Lists.newArrayList;
 
 class HtmlTextDecorator {
 

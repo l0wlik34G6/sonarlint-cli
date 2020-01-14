@@ -19,7 +19,6 @@
  */
 package org.sonarlint.cli.analysis;
 
-import com.google.common.annotations.VisibleForTesting;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.file.DirectoryStream;
@@ -30,6 +29,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
+
+import org.sonar.api.internal.google.common.annotations.VisibleForTesting;
 import org.sonarlint.cli.SonarProperties;
 import org.sonarlint.cli.config.ConfigurationReader;
 import org.sonarlint.cli.config.GlobalConfiguration;

@@ -19,9 +19,6 @@
  */
 package org.sonarlint.cli.config;
 
-import com.google.common.base.Charsets;
-import com.google.common.io.Files;
-import com.google.gson.GsonBuilder;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.util.HashSet;
@@ -29,7 +26,10 @@ import java.util.Set;
 
 import javax.annotation.Nullable;
 
-import org.apache.commons.lang.StringUtils;
+import org.sonar.api.internal.apachecommons.lang.StringUtils;
+import org.sonar.api.internal.google.common.base.Charsets;
+import org.sonar.api.internal.google.common.io.Files;
+import org.sonar.api.internal.google.gson.GsonBuilder;
 
 public class ConfigurationReader {
   private static final String FAIL_PARSE_JSON = "Failed to parse JSON file: ";

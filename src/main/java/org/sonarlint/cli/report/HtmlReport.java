@@ -38,7 +38,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
-import org.apache.commons.io.FileUtils;
+import org.sonar.api.internal.apachecommons.io.FileUtils;
 import org.sonarlint.cli.util.Logger;
 import org.sonarlint.cli.util.Util;
 import org.sonarsource.sonarlint.core.client.api.common.RuleDetails;
@@ -67,7 +67,7 @@ public class HtmlReport implements Reporter {
     }
     report.setTitle(projectName);
     report.setDate(date);
-    report.setFilesAnalyzed(result.fileCount());
+    report.setFilesAnalyzed(result.indexedFileCount());
     copyRuleHtmlDescriptions(ruleDescriptionProducer, report);
     print(report);
   }

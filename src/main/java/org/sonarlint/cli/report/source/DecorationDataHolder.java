@@ -19,9 +19,10 @@
  */
 package org.sonarlint.cli.report.source;
 
-import com.google.common.collect.Lists;
 import java.util.Iterator;
 import java.util.List;
+
+import org.sonar.api.internal.google.common.collect.Lists;
 import org.sonarlint.cli.report.RichIssue;
 
 class DecorationDataHolder {
